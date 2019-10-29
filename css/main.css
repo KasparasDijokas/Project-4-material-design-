@@ -1,0 +1,86 @@
+body {
+
+}
+
+.h-container {
+    display: inline-block;
+    width: 100%;
+    background-color: #2EB2EA;
+    height: 100vh;
+    text-align: center;
+}
+
+    header {
+        display: inline-block;
+        width: 80%;
+        background-color: #2EB2EA;
+        text-align: center;
+        margin: 10vh 0;
+    }
+
+        .logo {
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            font-size: 3em;
+            color: #000;
+        }
+
+        p {
+            display: inline-block;
+            width: 50%;
+            color: #BDC4D8;
+            font-size: 1.5em;
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        form {
+            display: inline-block;
+            width: 40%;
+            position: relative;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+            label {
+                display: inline-block;
+                position: absolute;
+                top: 10px;
+                font-size: 1em;
+                transform-origin: 0 0;
+                transition: all .2s ease;
+                color: #fff;
+            }
+
+            input {
+                display: inline-block;
+                width: 100%;
+                border: none;
+                border-bottom: 2px solid #fff;
+                background-color: transparent;
+            }
+
+        input:focus {
+            outline: none;
+        }
+
+            .btn {
+                display: inline-block;
+                background-color: #EA1E63;
+                padding: 10px 40px;
+                border-radius: 5px;
+                color: #fff;
+                text-decoration: none;
+                margin-top: 40px;
+            }
+
+    .main-content {
+        background-color: red;
+        height: 800px;
+    }
