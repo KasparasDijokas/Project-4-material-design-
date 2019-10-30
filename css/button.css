@@ -7,3 +7,14 @@
     text-decoration: none;
     margin-top: 40px;
 }
+
+.main-content-form > .content-btn {
+    display: inline-block;
+    background-color: #EA1E63;
+    padding: 16px 30px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 40px;
+
+}

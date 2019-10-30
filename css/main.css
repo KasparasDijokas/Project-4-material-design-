@@ -91,6 +91,11 @@ MAIN CONTENT
                     text-align: start;
                 }
 
+                .main-content a {
+                    text-decoration: none;
+                    color: rgb(241, 81, 127);
+                }
+
             .right {
                 display: inline-block;
                 width: 40%;
