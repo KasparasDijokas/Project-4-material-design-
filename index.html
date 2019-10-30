@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/clock.css">
-    <link rel="stylesheet" href="./css/header-form.css">
+    <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/mouse.css">
     <link rel="stylesheet" href="./css/progress-bar.css">
     <script src="./js/timer.js"></script>
@@ -62,14 +62,18 @@
                 Contact form is fully working and very easy to customize.</p>
 
                 <form class="main-content-form">
-                    <input type="text">
-                    <label for="">Name</label>
-
+                    <div class="float-container">
+                        <label for="floatField">Name</label>
+                        <input id="floatField" type="text">
+                    </div>
+                    
+                    <!-- <label class="name-left">Name</label> -->
+<!-- 
                     <input type="email">
-                    <label for="">Email</label>
+                    <label class="email-right">Email</label>
 
                     <input type="text">
-                    <label for="">Message</label>
+                    <label for="">Message</label> -->
 
                     <a href="#" class="content-btn">Send Message</a>
                 </form>

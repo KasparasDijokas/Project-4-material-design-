@@ -1,0 +1,95 @@
+.header-form {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+    .header-form > input {
+        display: inline-block;
+        width: 100%;
+        line-height: 32px;
+        font-size: 1em;
+        border: none;
+        border-bottom: 1px solid #fff;
+        background-color: transparent;
+        transition: all 1s ease;
+    }
+
+    .header-form > label {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        font-size: 1em;
+        transform-origin: 0 0;
+        transition: all 1s ease;
+        color: #fff;
+    }
+
+    .header-form > input:focus + label {
+        transform: translateY(-16px) scale(.75);
+    }
+
+    .header-form > input:focus {
+        outline: none;
+    }
+
+    /* input:(placeholder-shown) + label {
+        transform: translateY(-16px) scale(.75);
+    } */
+
+
+
+
+    /* .main-content-form {
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        position: relative;
+    }
+
+    .main-content-form > label {
+        display: inline-block;
+        transform-origin: 0 0;
+        transition: all 1s ease;
+        position: absolute;
+        top: 0;
+
+    }
+
+    .main-content-form > input {
+        display: inline-block;
+        width: 40%;
+        position: relative;
+        line-height: 30px;
+        border: none;
+        border-bottom: 1px solid gray;
+        transition: all 1s ease;
+    } */
+
+    .float-container {
+        border: solid 1px #ccc;
+        position: relative;
+        padding: 10px 8px;
+    }
+
+    .float-container input {
+        border: solid 1px #ccc;
+        outline: 0;
+        font-size: 16px;
+        padding: 16px 0 10px;
+
+    }
+
+    .float-container label {
+        position: absolute;
+        font-size: 16px;
+        transform-origin: top left; /*The label changed size and by default, used the center point of the label. Adjusting the origin point to be the top-left corner should work.*/
+        transform: translate(0, 12px) scale(1);
+        transition: all .2s ease-in-out;
+    }
+
+    .float-container:active label {
+        transform: translate(0, -12px) scale(.75);
+      }
