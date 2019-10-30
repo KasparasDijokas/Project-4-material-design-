@@ -1,0 +1,26 @@
+ .progress-bar p {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+     }
+
+.progress-bar span {
+    display: inline-block;
+    float: right;
+    padding-right: 16px;
+}
+
+.bar {
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+        }
+
+    progress::-webkit-progress-bar {
+         background-color: #EEEEEE; 
+            }
+
+    progress::-webkit-progress-value {
+         color: #01A7F3;
+        background-color: #01A7F3;
+            }

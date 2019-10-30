@@ -2,18 +2,27 @@ body {
 
 }
 
+/*************************
+==========================
+HEADER
+==========================
+**************************/
+
 .header-container {
     display: inline-block;
     width: 100%;
     background-color: #2EB2EA;
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     text-align: center;
 }
 
-    header {
+    .header {
         display: inline-block;
-        width: 80%;
-        background-color: #2EB2EA;
+        width: 40%;
         text-align: center;
         margin: 10vh 0;
     }
@@ -33,65 +42,57 @@ body {
 
         p {
             display: inline-block;
-            width: 50%;
+            width: 100%;
             color: #BDC4D8;
             font-size: 1.5em;
             text-align: center;
             margin-top: 32px;
         }
 
-        form {
+/*************************
+==========================
+MAIN CONTENT
+==========================
+**************************/
+            
+
+    .content-container {
+        display: inline-block;
+        width: 100%;
+        background-color: #fff;
+        height: 80vh;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+        .main-content {
             display: inline-block;
-            width: 50%;
-            position: relative;
-            margin-top: 20px;
-            padding: 20px 0;
+            width: 80%;
         }
 
-            label {
+            .left {
                 display: inline-block;
-                position: absolute;
-                top: 20px;
-                left: 0;
-                font-size: 1em;
-                transform-origin: 0 0;
-                transition: all 1s ease;
-                color: #fff;
+                width: 50%;
+                float: left;
+                padding: 0 16px;
             }
 
-            input {
+                .main-content h3 {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: start;
+                    text-transform: uppercase;
+                }
+
+                .main-content p {
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 16px;
+                    text-align: start;
+                }
+
+            .right {
                 display: inline-block;
-                width: 100%;
-                line-height: 32px;
-                font-size: 1em;
-                border: none;
-                border-bottom: 1px solid #fff;
-                background-color: transparent;
-                transition: all 1s ease;
+                width: 40%;
+                float: right;
             }
-
-            input:focus + label {
-                transform: translateY(-16px) scale(.75);
-            }
-
-            input:focus {
-                outline: none;
-            }
-
-            /* input:(placeholder-shown) + label {
-                transform: translateY(-16px) scale(.75);
-            } */
-            .btn {
-                display: inline-block;
-                background-color: #EA1E63;
-                padding: 14px 40px;
-                border-radius: 5px;
-                color: #fff;
-                text-decoration: none;
-                margin-top: 40px;
-            }
-
-    .main-content {
-        background-color: red;
-        height: 800px;
-    }
