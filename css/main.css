@@ -42,38 +42,49 @@ body {
 
         form {
             display: inline-block;
-            width: 40%;
+            width: 50%;
             position: relative;
             margin-top: 20px;
-            padding: 20px;
+            padding: 20px 0;
         }
 
             label {
                 display: inline-block;
                 position: absolute;
-                top: 10px;
+                top: 20px;
+                left: 0;
                 font-size: 1em;
                 transform-origin: 0 0;
-                transition: all .2s ease;
+                transition: all 1s ease;
                 color: #fff;
             }
 
             input {
                 display: inline-block;
                 width: 100%;
+                line-height: 32px;
+                font-size: 1em;
                 border: none;
-                border-bottom: 2px solid #fff;
+                border-bottom: 1px solid #fff;
                 background-color: transparent;
+                transition: all 1s ease;
             }
 
-        input:focus {
-            outline: none;
-        }
+            input:focus + label {
+                transform: translateY(-16px) scale(.75);
+            }
 
+            input:focus {
+                outline: none;
+            }
+
+            /* input:(placeholder-shown) + label {
+                transform: translateY(-16px) scale(.75);
+            } */
             .btn {
                 display: inline-block;
                 background-color: #EA1E63;
-                padding: 10px 40px;
+                padding: 14px 40px;
                 border-radius: 5px;
                 color: #fff;
                 text-decoration: none;
