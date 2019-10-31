@@ -8,13 +8,22 @@
     margin-top: 40px;
 }
 
-.main-content-form > .content-btn {
+.content-btn {
     display: inline-block;
     background-color: #EA1E63;
     padding: 16px 30px;
     border-radius: 5px;
     color: #fff;
     text-decoration: none;
-    margin-top: 40px;
+    margin-top: 80px;
+    float: right;
+}
 
+.btn-round {
+    padding: 16px 20px;
+    font-size: 22px;
+    border-radius: 50px;
+    position: absolute;
+    top: -80px;
+    right: 153px;
 }

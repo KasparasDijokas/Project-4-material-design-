@@ -1,5 +1,5 @@
-body {
-
+html {
+scroll-behavior: smooth;
 }
 
 /*************************
@@ -13,9 +13,10 @@ HEADER
     width: 100%;
     background-color: #2EB2EA;
     background-image: url(../img/banner.jpg);
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     text-align: center;
 }
@@ -91,7 +92,7 @@ MAIN CONTENT
                     text-align: start;
                 }
 
-                .main-content a {
+                .left a, .right p a {
                     text-decoration: none;
                     color: rgb(241, 81, 127);
                 }
@@ -99,20 +100,25 @@ MAIN CONTENT
             .right {
                 display: inline-block;
                 width: 40%;
+                padding: 0 10px;
                 float: right;
             }
 
  /*************************
 ==========================
-MAIN CONTENT
+Footer
 ==========================
 **************************/           
 
 .footer-container {
     display: inline-block;
-    width: 100%;
+    width: 100%;            
     background-color:#2EB2EA;
     text-align: center;
+}
+
+.footer {
+    position: relative;
 }
 
 .social {

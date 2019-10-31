@@ -7,7 +7,6 @@
 .progress-bar span {
     display: inline-block;
     float: right;
-    padding-right: 16px;
 }
 
 .bar {
