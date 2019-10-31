@@ -37,17 +37,18 @@ HEADER
             display: inline-block;
             width: 100%;
             text-align: center;
-            font-size: 3em;
+            font-size: 60px;
             color: #000;
+            font-family: 'Raleway', sans-serif;
         }
 
         p {
             display: inline-block;
             width: 100%;
-            color: #BDC4D8;
+            color: rgb(143, 145, 153);
             font-size: 1.5em;
             text-align: center;
-            margin-top: 32px;
+            margin-top: 20px;
         }
 
 /*************************
@@ -131,8 +132,12 @@ Footer
     .social a {
         color: #fff;
         font-size: 20px;
-        padding: 20px;
+        line-height: 20px;
+        padding: 10px;
         text-decoration: none;
+        width: 40px;
+        border-radius: 50%;
+        margin: 10px;
     }
 
     .footer-content {
@@ -151,4 +156,10 @@ Footer
     .footer-content a {
         text-decoration: none;
         color: #81DDFF;
+    }
+
+    .social a:hover {
+        color: #81DDFF;
+        background-color: #fff;
+        transform: scale(1.2);
     }
