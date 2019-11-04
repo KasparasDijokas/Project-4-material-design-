@@ -13,6 +13,10 @@
     height: 5px;
     width: 100%;
     border-radius: 10px;
+
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
     }
 
     progress::-webkit-progress-bar {
@@ -22,3 +26,12 @@
     progress::-webkit-progress-value {
         background-color: #01A7F3;
             }
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
