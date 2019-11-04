@@ -1,3 +1,7 @@
+.progress-bar {
+    text-align: left;
+} 
+ 
  .progress-bar p {
     display: inline-block;
     width: 100%;
