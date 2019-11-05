@@ -4,6 +4,7 @@
     height: 200px;
     border: 10px solid #fff;
     border-radius: 60px;
+    margin-bottom: 40px;
 }
 
 .mouse > .wheel {
