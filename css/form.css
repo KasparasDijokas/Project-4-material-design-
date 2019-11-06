@@ -1,3 +1,8 @@
+/*************
+ HEADER FORM  
+
+ ************/
+
 .header-form {
     display: inline-block;
     width: 100%;
@@ -5,39 +10,56 @@
     margin-top: 20px;
     padding: 20px 0;
 }
+
     .header-form > input {
-        display: inline-block;
         width: 100%;
-        line-height: 32px;
-        font-size: 1em;
+        background-color: transparent;
         border: none;
         border-bottom: 1px solid #fff;
-        background-color: transparent;
-        transition: all 1s ease;
+        font-size: 20px;
+        line-height: 24px;
+        transition: all 2s ease;
+        color:rgb(255, 255, 255);
+        padding-bottom: 5px;
     }
 
-    .header-form > label {
-        display: inline-block;
+    .header-form > input + label {
         position: absolute;
-        top: 20px;
+        top: 15px;
         left: 0;
-        font-size: 1em;
-        transform-origin: 0 0;
-        transition: all 1s ease;
         color: #fff;
-    }
-
-    .header-form > input:focus + label {
-        transform: translateY(-16px) scale(.75);
+        transition: all 1s ease;
+        transform-origin: 0 0;
+        outline: none;
     }
 
     .header-form > input:focus {
         outline: none;
+        border-bottom: 1px solid rgb(4, 98, 138);
     }
 
-    /* input:(placeholder-shown) + label {
-        transform: translateY(-16px) scale(.75);
-    } */
+    .header-form > input:focus + label {
+        top: -5px;
+        transform: scale(0.9);
+        color: rgb(4, 98, 138);
+    }
+
+    .header-form > input:not(:placeholder-shown) + label {
+        top: -5px;
+        transform: scale(0.9);
+        color: rgb(4, 98, 138);
+    }
+
+    .header-form > input:not(:placeholder-shown) {
+        border-bottom: 1px solid rgb(4, 98, 138);
+    }
+
+
+/*************
+Content form 
+ 
+ ************/
+
 
 
 .content-form {
@@ -50,52 +72,52 @@
         display: inline-block;
         width: 45%;
         float: left;
+        position: relative;
     }
 
     .cf-right {
         display: inline-block;
         width: 45%;
         float: right;
+        position: relative;
     }
 
     .cf-bottom {
         display: inline-block;
         width: 100%;
         margin-top: 40px;
+        position: relative;
     }
 
-    .content-form input {
+    .action > input  {
         display: inline-block;
         width: 100%;
         padding: 10px 0;
+        font-size: 18px;
+        line-height: 24px;
         border: none;
-        position: relative;
         outline: none;
-        background: none;
         border-bottom: 1px solid gray;
+        color: rgb(62, 63, 66);
     }
 
-    .content-form label {
+    .action > label {
         position: absolute;
         transform-origin: 0 0;
-        transform: translate(0, 10px) scale(1); 
+        top: 10px;
+        left: 0;
         transition: all .5s ease;
+        color: rgb(143, 145, 153);
     }
 
-    .action:hover label {
-        /* transform: translate(0, -16px) scale(.8); */
-        animation-name: aside;
-        animation-duration: .5s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-
+    .action > input:focus + label {
+        top: -15px;
+        transform: scale(0.8);
     }
 
-    @keyframes aside {
-        0% {
-            /* transform: translate(0, 10px) scale(1); */
-        }
-        100% {
-             transform: translate(0, -16px) scale(.8);
-        }
+    .action > input:not(:placeholder-shown) + label {
+        top: -15px;
+        transform: scale(0.8);
     }
+
+    
